@@ -207,4 +207,75 @@ a,b = map(int, raw_input().strip().split(" "))
 result = candy(a,b)
 
 
+# Sherlock and Squares
+
+# Watson gives two integers A & B to Sherlock and asks if he can count the number of square integers between A and B (both inclusive).
+
+# A square integer is an integer which is the square of any integer. For example, 1, 4, 9, 16 are some of the square integers as they are squares of 1, 2, 3, 4 respectively.
+
+# Input Format
+# First line contains T, the number of testcases. T test cases follow, each in a newline.
+# Each testcase contains two space separated integers denoting A and B.
+
+
+# Enter your code here. Read input from STDIN. Print output to STDOUT
+def sherlock(a,b):
+    answer = int((b)**0.5) - int((a-1)**0.5)
+    return answer
+
+n = int(raw_input())
+for i in range(n):
+    a,b = map(int,raw_input().split())
+    answer = sherlock(a,b)
+    print answer
+
+
+# Chocolate Feast
+
+# Little Bob loves chocolates, and goes to a store with $N in his pocket. The price of each chocolate is $C. The store offers a discount: for every M wrappers he gives to the store, he gets one chocolate for free. How many chocolates does Bob get to eat?
+
+
+# Enter your code here. Read input from STDIN. Print output to STDOUT
+T = int(raw_input())
+for i in range (0,T):
+    A,B,C1 = [int(x) for x in raw_input().split(' ')]
+    answer = A/B
+    wrapper = A/B
+    while wrapper >= C1:
+        answer += (wrapper/C1)
+        wrapper = (wrapper % C1) + (wrapper/C1)
+    result = answer
+    print result
+
+
+
+
+# Enter your code here. Read input from STDIN. Print output to STDOUT
+def stones(a,b,n):
+    for i in range(a):
+        if a == b:
+            return " ".join(map(str,[a * (n - 1)]))
+        if a < b:
+            return stones(b, a, n)
+        return " ".join(map(str,[i * a + (n - i - 1) * b for i in range(n)]))
+
+
+
+# Manasa and Stones
+
+# Problem Statement
+
+# Manasa is out on a hike with friends. She finds a trail of stones with numbers on them. She starts following the trail and notices that two consecutive stones have a difference of either a or b. Legend has it that there is a treasure trove at the end of the trail and if Manasa can guess the value of the last stone, the treasure would be hers. Given that the number on the first stone was 0, find all the possible values for the number on the last stone.
+
+# Note : The numbers on the stones are in increasing order
+
+
+n = int(raw_input())
+for _ in range(n):
+    c = int(raw_input())
+    a = int(raw_input())
+    b = int(raw_input())
+    answer = stones(a,b,c)
+    print answer
+
 
