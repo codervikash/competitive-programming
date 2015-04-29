@@ -16,5 +16,8 @@ def candy(a,b):
 
         total = total + (y-x+1)*(z)
     result = total/a
-
     print result
+
+
+a,b = map(int, raw_input().strip().split(" "))
+result = candy(a,b)
