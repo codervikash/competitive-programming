@@ -31,8 +31,6 @@ def gemstones(a):
   p = set(p)
   print len(p)
 
-
-
 x = int(raw_input())
 z = []
 for i in range(x):
