@@ -15,7 +15,7 @@
 # 0≤Li≤Hi<3×105
 # Output Format
 #
-# Output a single integer, the maximum number of people Mr. Krabs can lure into the haunted house.
+# Output a single integer, the maximum number of people Mr. Krabs can lure into the haunted house.m
 # n = int(raw_input())
 # x = []
 
