@@ -1,5 +1,11 @@
+**Paste - 1**
+```
+paste -d";" -s
+
+```
+
 **Paste - 2**
 ```
-awk 'paste -d';' - -'
+paste -d";" - - -
 
 ```
