@@ -43,7 +43,7 @@ if not found:
 else:
     print("YES")
 
-# some much efficient alternatives:
+# much efficient alternatives:
 # 1st
 
 st=raw_input()
