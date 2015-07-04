@@ -24,3 +24,4 @@ if set(x).issubset(c):
 	print('pangram')
 else:
 	print('not pangram')
+	

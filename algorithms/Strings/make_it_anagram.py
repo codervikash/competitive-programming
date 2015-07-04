@@ -29,4 +29,4 @@ for i in y:
 for i in range(26):
 	count += abs(s1[i] - s2[i])
 
-print count		
+print count
