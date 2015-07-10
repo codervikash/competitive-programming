@@ -18,22 +18,21 @@
 # Print the number of gem-elements that are common in these rocks. If there are none, print 0.
 
 
-
 # Enter your code here. Read input from STDIN. Print output to STDOUT
 def gemstones(a):
-  p = a[0]
-  for i in range(1,len(a)):
-    q = []
-    for j in a[i]:
-      if j in p:
-        q.append(j)
+    p = a[0]
+    for i in range(1, len(a)):
+        q = []
+        for j in a[i]:
+            if j in p:
+                q.append(j)
     p = q
-  p = set(p)
-  print len(p)
+    p = set(p)
+    print (len(p))
 
 x = int(raw_input())
 z = []
 for i in range(x):
-  z.append(list(raw_input().strip()))
+    z.append(list(raw_input().strip()))
 
 gemstones(z)

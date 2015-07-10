@@ -18,23 +18,24 @@
 
 # Enter your code here. Read input from STDIN. Print output to STDOUT
 
-def funny(a):
-	l = len(a)
-	count = 0
-	for i in range(1,l):
-		if abs(ord(a[i]) - ord(a[i - 1])) == abs(ord(a[l - i]) - ord(a[l - i -1])):
-			count += 1
-		else:
-			return 'Not Funny'
 
-		if count == l -1:
-			return 'Funny'
+def funny(a):
+    l = len(a)
+    count = 0
+    for i in range(1, l):
+        if abs(ord(a[i]) - ord(a[i - 1])) == abs(ord(a[l - i]) - ord(a[l - i - 1])):
+            count += 1
+        else:
+            return 'Not Funny'
+
+        if count == l - 1:
+            return 'Funny'
 
 
 x = int(raw_input())
 
 
 for i in range(x):
-	y = raw_input()
-	answer = funny(y)
-	print answer
+    y = raw_input()
+    answer = funny(y)
+    print (answer)

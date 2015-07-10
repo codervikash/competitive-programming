@@ -11,11 +11,10 @@
 # Given the length of N sticks, print the number of sticks that are cut in subsequent cut operations.
 
 
-    # Enter your code here. Read input from STDIN. Print output to STDOUT
-def stick(x,y):
+# Enter your code here. Read input from STDIN. Print output to STDOUT
+def stick(x, y):
     z = len(y)
     b = []
-    h = 0
     for a in range(z):
         if y[a] >= x:
             q = y[a] - x
@@ -25,18 +24,18 @@ def stick(x,y):
 
     c = len(b)
     if c > 1:
-        print c
+        print (c)
         d = filter(lambda t: t != 0, b)
         f = sorted(d)
         e = d[0]
-        stick(e,f)
+        stick(e, f)
 
     else:
-        print c
+        print (c)
 
 
 x = int(raw_input())
 y = map(int, raw_input().split())
 m = sorted(y)
 w = m[0]
-stick(w,m)
+stick(w, m)

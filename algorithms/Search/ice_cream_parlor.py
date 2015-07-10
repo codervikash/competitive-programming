@@ -11,7 +11,7 @@
 
 # Output Format
 
-# Output two integers, each of which is a valid index of a flavor. The lower index must be printed first. Indices are indexed from 1 to N.
+# Output two integers, each of which is a valid index of a flavor. The lower index must be printed first. Indices are indexed from 1 to N.c
 
 
 # Enter your code here. Read input from STDIN. Print output to STDOUT

@@ -24,13 +24,13 @@
 
 n = input()
 k = input()
-candies = [input() for _ in range(0,n)]
+candies = [input() for _ in range(0, n)]
 candies.sort()
-temp = candies[1+k-1] - candies[1]
-for i in range(0,n-k+1):
-  diff = candies[i + k-1] - candies[i]
-  if diff < temp:
-    temp = diff
-  i +=1
+temp = candies[1 + k - 1] - candies[1]
+for i in range(0, n - k + 1):
+    diff = candies[i + k - 1] - candies[i]
+    if diff < temp:
+        temp = diff
+    i += 1
 
-print temp
+print (temp)

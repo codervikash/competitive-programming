@@ -15,15 +15,16 @@
 # 1 <= T <= 1000
 # 0 < N < 106
 
+
 # Enter your code here. Read input from STDIN. Print output to STDOUT
 def shakes(a):
     ans = 0
-    for i in range(1,a):
+    for i in range(1, a):
         ans += i
-        i+=1
+        i += 1
     return ans
 n = int(raw_input())
 for i in range(n):
     a = int(raw_input())
     ans = shakes(a)
-    print ans
+    print (ans)

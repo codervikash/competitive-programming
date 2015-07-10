@@ -29,19 +29,18 @@
 
 # Enter your code here. Read input from STDIN. Print output to STDOUT
 
-#!/usr/bin/python
-def lane(a,b,c):
-  start = a[b]
-  for i in range(b,c+1):
-    if a[i] < a[b]:
-      start = a[i]
 
-  print start
+def lane(a, b, c):
+    start = a[b]
+    for i in range(b, c + 1):
+        if a[i] < a[b]:
+            start = a[i]
+
+    print (start)
 
 
 x, y = map(int, raw_input().split())
 a = list(map(int, raw_input().split()))
 for i in range(y):
-  b,c = map(int, raw_input().split())
-  lane(a,b,c)
-
+    b, c = map(int, raw_input().split())
+    lane(a, b, c)

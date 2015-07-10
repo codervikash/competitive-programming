@@ -4,20 +4,20 @@
 
 
 # Enter your code here. Read input from STDIN. Print output to STDOUT
-def candy(a,b):
-    final = {}
+def candy(a, b):
+    total = 0
     for i in range(b):
-        x,y,z = map(int,raw_input().strip().split(' '))
+        x, y, z = map(int, raw_input().strip().split(' '))
 
-    #using this is inefficient and results in runtime error in large trstcases
+    # using this is inefficient and results in runtime error in large trstcases
     #     for j in range(x,y+1):
     #         final[j] = final.get(j,0)+z
     # result = sum(final.values())/a
 
-        total = total + (y-x+1)*(z)
-    result = total/a
-    print result
+        total = total + (y - x + 1) * (z)
+    result = total / a
+    print (result)
 
 
-a,b = map(int, raw_input().strip().split(" "))
-result = candy(a,b)
+a, b = map(int, raw_input().strip().split(" "))
+result = candy(a, b)

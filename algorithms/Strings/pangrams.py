@@ -16,12 +16,11 @@
 
 import collections
 
-x = ['a','b','c','d','e','f','g','h','i','j','k','l','m','n','o','p','q','r','s','t','u','v','w','x','y','z']
-a = raw_input().replace(' ','').lower()
-b= collections.Counter(a)
+x = ['a', 'b', 'c', 'd', 'e', 'f', 'g', 'h', 'i', 'j', 'k', 'l', 'm', 'n', 'o', 'p', 'q', 'r', 's', 't', 'u', 'v', 'w', 'x', 'y', 'z']
+a = raw_input().replace(' ', '').lower()
+b = collections.Counter(a)
 c = list(set(b.elements()))
 if set(x).issubset(c):
-	print('pangram')
+    print('pangram')
 else:
-	print('not pangram')
-	
+    print('not pangram')

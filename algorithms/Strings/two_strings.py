@@ -18,24 +18,22 @@
 # 1<=T<=10
 # 1<=|A|,|B|<=105
 
+
 # Enter your code here. Read input from STDIN. Print output to STDOUT
-
 def strings(a, b):
-	p = [0]*26
-	for i in a:
-		p[ord(i) - 97] += 1
-	for j in b:
-		if p[ord(j) - 97]:
-			return 'YES'
+    p = [0] * 26
+    for i in a:
+        p[ord(i) - 97] += 1
+    for j in b:
+        if p[ord(j) - 97]:
+            return 'YES'
 
-	return 'NO'
-
-
+    return 'NO'
 
 x = int(raw_input())
 
 for i in range(x):
-	a = raw_input()
-	b = raw_input()
-	ans = strings(a,b)
-	print ans
+    a = raw_input()
+    b = raw_input()
+    ans = strings(a, b)
+    print (ans)

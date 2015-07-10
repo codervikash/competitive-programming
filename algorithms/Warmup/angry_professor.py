@@ -1,6 +1,6 @@
 # Angry Professor
 
-Problem Statement
+# Problem Statement
 
 # The professor is conducting a course on Discrete Mathematics to a class of N students. He is angry at the lack of their discipline, and he decides to cancel the class if there are less than K students present after the class starts.
 
@@ -9,13 +9,12 @@ Problem Statement
 
 # Enter your code here. Read input from STDIN. Print output to STDOUT
 
-def angry(x,y):
+def angry(x, y):
     z = 0
-    a = map(int,raw_input().split())
+    a = map(int, raw_input().split())
     for b in range(x):
         if a[b] <= 0:
-            z+=1
-
+            z += 1
 
     if z >= y:
         return 'NO'
@@ -24,6 +23,6 @@ def angry(x,y):
 
 x = int(raw_input())
 for _ in range(x):
-    y,z = map(int,raw_input().strip().split())
-    answer = angry(y,z)
-    print answer
+    y, z = map(int, raw_input().strip().split())
+    answer = angry(y, z)
+    print (answer)

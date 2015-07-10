@@ -21,13 +21,13 @@
 
 x = int(raw_input())
 for _ in range(x):
-  y = int(raw_input())
-  z = str(y)
-  a = 0
-  for i in z:
-    if int(i) == 0:
-      pass
-    elif y % int(i) == 0 :
-      a +=1
+    y = int(raw_input())
+    z = str(y)
+    a = 0
+    for i in z:
+        if int(i) == 0:
+            pass
+        elif y % int(i) == 0:
+            a += 1
 
-  print a
+    print (a)

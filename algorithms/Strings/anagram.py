@@ -13,33 +13,30 @@
 # Constraints 1≤T≤100
 # 1≤len(S1)+len(S2)≤104
 
+
 # Enter your code here. Read input from STDIN. Print output to STDOUT
-
-#!/usr/bin/python
 def anagram(a):
-	count1 = [0]*26
-	count2 = [0]*26
-	count = 0
-	length = len(a)
-	if length % 2 != 0:
-		return -1
-	else:
-		for i in a[0 : (length/2)]:
-			count1[ord(i) - 97] += 1
+    count1 = [0] * 26
+    count2 = [0] * 26
+    count = 0
+    length = len(a)
+    if length % 2 != 0:
+        return -1
+    else:
+        for i in a[0: (length / 2)]:
+            count1[ord(i) - 97] += 1
 
-		for i in a[length/2 : length]:
-			count2[ord(i) - 97] += 1
+            for i in a[length / 2: length]:
+                count2[ord(i) - 97] += 1
 
-		for i in range(26):
-			count += abs(count1[i] - count2[i])
-		return count/2
-
-
+                for i in range(26):
+                    count += abs(count1[i] - count2[i])
+                    return count / 2
 
 
 x = int(raw_input())
 
 for i in range(x):
-	a = raw_input()
-	answer = anagram(a)
-	print answer
+    a = raw_input()
+    answer = anagram(a)
+    print (answer)

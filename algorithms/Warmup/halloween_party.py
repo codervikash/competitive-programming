@@ -18,18 +18,19 @@
 # Note: Chocolate must be served in 1 x 1 sized pieces. Alex can't relocate any of the pieces, nor can he place any piece on top of another.
 
 # Enter your code here. Read input from STDIN. Print output to STDOUT
+
+
 def halloween(a):
-  result = 0
-  if a%2 == 0:
-    result = (a/2) * (a/2)
-  else:
-    result = ((a+1)/2) * (a/2)
-  return result
+    result = 0
+    if a % 2 == 0:
+        result = (a / 2) * (a / 2)
+    else:
+        result = ((a + 1) / 2) * (a / 2)
+    return result
 
 
 a = int(raw_input())
 for i in range(a):
-  b = int(raw_input())
-  result = halloween(b)
-  print result
-
+    b = int(raw_input())
+    result = halloween(b)
+    print (result)

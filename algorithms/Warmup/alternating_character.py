@@ -5,10 +5,10 @@
 
 # Enter your code here. Read input from STDIN. Print output to STDOUT
 def character(a):
-    ans= 0
-    for i in range(len(a)-1):
-        if a[i] == a[i+1]:
-            ans +=1
+    ans = 0
+    for i in range(len(a) - 1):
+        if a[i] == a[i + 1]:
+            ans += 1
     return ans
 
 
@@ -16,4 +16,4 @@ n = int(raw_input())
 for i in range(n):
     a = raw_input()
     answer = character(a)
-    print answer
+    print (answer)

@@ -21,9 +21,9 @@
 # Enter your code here. Read input from STDIN. Print output to STDOUT
 n = int(raw_input())
 for i in range(n):
-  a = int(raw_input())
-  b = map(int, raw_input().strip().split())
-  x = 1
-  for i in b:
-    x *= i
-  print x%1234567
+    a = int(raw_input())
+    b = map(int, raw_input().strip().split())
+    x = 1
+    for i in b:
+        x *= i
+        print (x % 1234567)

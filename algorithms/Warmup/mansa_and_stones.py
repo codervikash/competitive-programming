@@ -8,16 +8,15 @@
 # Note : The numbers on the stones are in increasing order
 
 # Enter your code here. Read input from STDIN. Print output to STDOUT
-def stones(a,b,n):
+
+
+def stones(a, b, n):
     for i in range(a):
         if a == b:
-            return " ".join(map(str,[a * (n - 1)]))
+            return " ".join(map(str, [a * (n - 1)]))
         if a < b:
             return stones(b, a, n)
-        return " ".join(map(str,[i * a + (n - i - 1) * b for i in range(n)]))
-
-
-
+        return " ".join(map(str, [i * a + (n - i - 1) * b for i in range(n)]))
 
 
 n = int(raw_input())
@@ -25,5 +24,5 @@ for _ in range(n):
     c = int(raw_input())
     a = int(raw_input())
     b = int(raw_input())
-    answer = stones(a,b,c)
-    print answer
+    answer = stones(a, b, c)
+    print (answer)

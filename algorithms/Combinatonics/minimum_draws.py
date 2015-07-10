@@ -7,6 +7,7 @@
 # Output Format
 # Print the number of Draws (x) Jim makes in the worst case scenario.
 
+
 # Enter your code here. Read input from STDIN. Print output to STDOUT
 def draw(a):
     if a == 1:
@@ -19,4 +20,4 @@ n = int(raw_input())
 for i in range(n):
     a = int(raw_input())
     ans = draw(a)
-    print ans
+    print(ans)

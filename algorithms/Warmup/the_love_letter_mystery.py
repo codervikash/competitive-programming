@@ -12,14 +12,14 @@
 
 def love(a):
     x = len(a)
-    y  = x-1
+    y = x - 1
     j = 0
-    for i in range(x/2):
-        if a[i] == a[y-i]:
-            i +=1
+    for i in range(x / 2):
+        if a[i] == a[y - i]:
+            i += 1
         else:
-            j += abs(ord(a[i]) - ord(a[y-i]))
-            i +=1
+            j += abs(ord(a[i]) - ord(a[y - i]))
+            i += 1
     return j
 
 
@@ -27,4 +27,4 @@ n = int(raw_input())
 for i in range(n):
     a = raw_input()
     answer = love(a)
-    print answer
+    print (answer)

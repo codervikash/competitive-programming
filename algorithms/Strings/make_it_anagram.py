@@ -17,16 +17,17 @@
 
 x = raw_input()
 y = raw_input()
-s1 = [0]*26
-s2 = [0]*26
+s1 = [0] * 26
+s2 = [0] * 26
 count = 0
 
 for i in x:
-	s1[ord(i) - 97] += 1
+    s1[ord(i) - 97] += 1
+
 for i in y:
-	s2[ord(i) - 97] += 1
+    s2[ord(i) - 97] += 1
 
 for i in range(26):
-	count += abs(s1[i] - s2[i])
+    count += abs(s1[i] - s2[i])
 
-print count
+print (count)

@@ -5,12 +5,12 @@
 
 # Enter your code here. Read input from STDIN. Print output to STDOUT
 T = int(raw_input())
-for i in range (0,T):
-    A,B,C1 = [int(x) for x in raw_input().split(' ')]
-    answer = A/B
-    wrapper = A/B
+for i in range(0, T):
+    A, B, C1 = [int(x) for x in raw_input().split(' ')]
+    answer = A / B
+    wrapper = A / B
     while wrapper >= C1:
-        answer += (wrapper/C1)
-        wrapper = (wrapper % C1) + (wrapper/C1)
+        answer += (wrapper / C1)
+        wrapper = (wrapper % C1) + (wrapper / C1)
     result = answer
-    print result
+    print (result)
