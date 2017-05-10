@@ -37,10 +37,10 @@ liss = [0] * 1000
 
 def lis_dp_recursive(arr, n):
 	if n == 1:
-		liss[n] = 1
+		return 1
 
 	liss[n] = 1
-	for i in xrange(n + 1):
+	for i in xrange(n):
 		if not liss[i]:
 			liss[i] = lis_dp_recursive(arr, i)
 			
