@@ -10,7 +10,10 @@ Output: 2
 
 def get_single_element(arr):
     l = len(arr)
+    count_set_bits = []*32
+
     for i in xrange(l):
+        if arr[i]
         
 
 
