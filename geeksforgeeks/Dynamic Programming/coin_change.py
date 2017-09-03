@@ -11,7 +11,16 @@ def coin_change(arr, m, n):
 		return 0
 
 	return coin_change(arr, m - 1, n ) + coin_change(arr, m, n-arr[m-1] )
+
+def coin_change_recursive(arr, m, n):
+	change = [0]
 	
+	for i in xrange(n + 1):
+		for j in xrange(m):
+			
+			
+
+
 arr = [1, 2, 3]
 m = len(arr)
 n = 4
